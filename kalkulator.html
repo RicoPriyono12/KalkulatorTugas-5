@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 5 Kalkulator Rico Web</title>
+    <style>
+      body {
+        padding: 10px;
+        margin: 10px;
+        background-position: center;
+        background-image: url(images/1.jpg);
+      }
+      .countainer-form {
+        padding: 10px;
+        margin-left: 450px;
+        margin-top: 100px;
+      }
+      .countainer-button {
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 18pt;
+        margin-left: 50px;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 500px;
+        cursor: grabbing;
+      }
+      .countainer-input::placeholder {
+        font-family: monospace;
+        font-size: 10pt;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #080808;
+      }
+      .countainer-input {
+        padding: 10px;
+        margin: 10px;
+        width: 400px;
+        background-color: #7a8587;
+        border-radius: 10px;
+      }
+      .countainer-h3 {
+        margin-left: 170px;
+        color: #effafc;
+        font-family: monospace;
+        font-weight: bold;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 15pt;
+        cursor: no-drop;
+      }
+      .countainer-span {
+        margin-left: 2px;
+        color: #effafc;
+        font-family: monospace;
+        font-weight: bold;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 12pt;
+        cursor: no-drop;
+      }
+      .countainer-p-span {
+        margin-left: 11px;
+        color: #effafc;
+        font-family: monospace;
+        font-weight: bold;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 11pt;
+        cursor: no-drop;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="countainer">
+      <div class="countainer-div">
+        <form name="calc" class="countainer-form" id="calc" action="#">
+          <h3 class="countainer-h3">KalkulatorKu</h3>
+          <tr class="countainer-tr">
+            <td class="countainer-td">
+              <input
+                class="countainer-input"
+                type="text"
+                name="inputAngka1"
+                id="angka1"
+                placeholder="masukan angka"
+              /><br />
+              <input
+                class="countainer-input"
+                type="text"
+                name="inputAngka2"
+                id="angka2"
+                placeholder="masukan angka"
+              /><br />
+              <p class="countainer-p-span">
+                Hasil Perhitungan : <br />
+                <br />
+                <span class="countainer-span" id="result"></span>
+              </p>
+            </td>
+
+            <td>
+              <br />
+              <input
+                class="countainer-button"
+                type="button"
+                onclick="tambahBy()"
+                value="+"
+              />
+              <input
+                class="countainer-button"
+                type="button"
+                onclick="kurangBy()"
+                value="-"
+              />
+              <input
+                class="countainer-button"
+                type="button"
+                onclick="kaliBy()"
+                value="*"
+              />
+              <input
+                class="countainer-button"
+                type="button"
+                onclick="bagiBy()"
+                value="\"
+              />
+              <input
+                class="countainer-button"
+                type="button"
+                onclick="pangkatBy()"
+                value="^"
+              />
+            </td>
+          </tr>
+        </form>
+      </div>
+    </div>
+    <script src="js/calc.js"></script>
+  </body>
+</html>
